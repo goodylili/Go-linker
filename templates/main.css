@@ -1,0 +1,34 @@
+
+body {
+
+    background-color: #950CE1;
+}
+
+
+div {
+    background-color: #260339;
+    opacity: 0.9;
+    margin: 120px;
+}
+
+h2 {
+    font-family: "Lucida Handwriting", cursive;
+    text-align: center;
+}
+
+p {
+
+    font-family: "Lucida Handwriting", cursive;
+    text-align: center;
+}
+
+form {
+    font-family: "Lucida Handwriting", cursive;
+    width: 80%;
+    margin-right: 200px;
+}
+
+input, select, submit {
+    font-family: "Lucida Handwriting", cursive;
+
+}
