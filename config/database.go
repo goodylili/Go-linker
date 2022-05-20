@@ -13,7 +13,6 @@ var (
 )
 
 func Migrations() {
-	// change this to the new gorm driver and methods
 	TheDatabase, err = gorm.Open(sqlite.Open("test.db"), &gorm.Config{})
 	if err != nil {
 		panic("failed to connect database")

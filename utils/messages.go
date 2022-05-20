@@ -30,16 +30,6 @@ func ReturnFormatError(writer http.ResponseWriter) {
 
 }
 
-func ReturnRequestError(writer http.ResponseWriter) {
-	writer.Header().Set("Content-Type", "application/json")
-	var buffer bytes.Buffer
-	buffer.WriteString(`{Response: "Error", Message: "You made a bad request"}`)
-	err := json.NewEncoder(writer).Encode(buffer.String())
-	if err != nil {
-		return
-	}
-}
-
 func ReturnNotFound(writer http.ResponseWriter) {
 	writer.Header().Set("Content-Type", "application/json")
 	var buffer bytes.Buffer

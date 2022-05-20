@@ -10,7 +10,6 @@ import (
 	"strings"
 )
 
-// SetLink manages the POST requests and migrates links into the database
 func SetLink(writer http.ResponseWriter, reader *http.Request) {
 	writer.Header().Set("Content-Type", "application/json")
 	var link models.LinkModel // creates link type
@@ -22,8 +21,8 @@ func SetLink(writer http.ResponseWriter, reader *http.Request) {
 	}
 
 	if strings.HasPrefix(link.Link, "http") == true && utils.ValidateURL(link.Link) == true {
-		config.TheDatabase.Create(&link) // migrates the data into the database
-		// outputs the data to console, this should be removed
+		config.TheDatabase.Create(&link)
+
 	} else {
 		link.Link = "https://" + link.Link
 		if utils.ValidateURL(link.Link) == true {
@@ -35,10 +34,13 @@ func SetLink(writer http.ResponseWriter, reader *http.Request) {
 
 	}
 
-	// return successful here
+	err = json.NewEncoder(writer).Encode(link)
+	if err != nil {
+		log.Println("There was an error encoding the output JSON", err)
+	}
 }
 
 func Ping(writer http.ResponseWriter, _ *http.Request) {
-	// reformat this properly
+
 	utils.ReturnSuccess(writer)
 }
