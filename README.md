@@ -9,45 +9,45 @@ The API can be used with web scrapers, bots to create concise links.
 
 ## _Technology Stack_
 
-### _What's on the backend?_
+### 🧑🏻‍🍳What's on the backend?
 
 - Golang.
 - SQLite.
 - GORM.
 - Gorilla Mux.
 
-### _What will be on the frontend (Pending)?_
+### ➬What will be on the frontend (Pending)?
 
 - HTML.
 - CSS.
 - Javascript.
 
-## 📜_Read the docs_
+## 📜Read the docs
 
 - Gitbook.
 - Getting Started.
 
 
-## ㊮_Resources_
+## ㊮Resources
 
 - [What is a link shortener?](https://edu.gcfglobal.org/en/internet-tips/what-is-a-url-shortener/1/#:~:text=Basically%2C%20when%20the%20URL%20shortener,the%20link%20easier%20to%20manage.)
 - Check out a blog article on how I built this.
 
 
-## 😎_What can you do with this currently? (Features)_
+## 😎What can you do with this currently? (Features)
 
 - Generate shortened links in your programs.
 
-## 😸_What's coming in v2 ? (Updates)_
+## 😸What's coming in v2 ? (Updates)
 
 - SDK for use in Go programs.
 - Website for public link shortening
 
-## 🆘_Contributing_
+## 🆘Contributing
 
 Check the contributors guidelines in the CONTRIBUTING markdown file, pull requests will be merged within 24 hours if
 accepted.
 
-## 🤖_Author(s)_
+## 🤖Author(s)
 
 [Ukeje Chukwuemeriwo(Goodnessuc)](twitter.com/goodylili)
