@@ -1,6 +1,5 @@
 # Go-linker: The Link  Shortener API Written in Go
 [![Programming Language](https://img.shields.io/badge/Language-Go-success?style=flat-square)](https://go.dev)
-
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-success.svg?style=flat-square)](https://github.com/Goodnessuc/Go-linker/pulls)
 ## _Project Description_
 
